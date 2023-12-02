@@ -1,0 +1,43 @@
+@import '../../../scss/mixins';
+@import '../../../scss/colors';
+
+.header {
+    &__container {
+        @include container();
+
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            justify-content: flex-start;
+        }
+    }
+
+
+    &__list {
+        display: flex;
+
+
+        & a {
+            color: $deeper-ocean-blue;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 0.8; /* 62.5% */
+
+            display: block;
+
+            padding: 8px;
+
+            &:hover {
+                color: $deeper-hover-blue;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 32px;
+
+                padding: 16px;
+            }
+        }
+
+    }
+}

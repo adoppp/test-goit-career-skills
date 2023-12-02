@@ -6,7 +6,7 @@ import './index.scss';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/react_vite_ts-template">
+    <BrowserRouter basename="/test-goit-career-skills">
       <App />
     </BrowserRouter>
   </React.StrictMode>,

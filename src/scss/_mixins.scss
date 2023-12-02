@@ -1,0 +1,27 @@
+@mixin transition() {
+    transition-property: 
+        background-color, 
+        border-color, 
+        fill, 
+        color, 
+        stroke,
+        border-radius, 
+        padding;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin container() {
+    display: flex;
+
+    max-width: 768px;
+
+    margin: 0 auto;
+
+    padding: 0 16px;
+
+    @media screen and (min-width: 768px) {
+
+        max-width: 1184px;
+    }
+}
