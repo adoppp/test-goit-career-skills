@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
+import { lazy } from 'react'
 
+const Home = lazy(() => import('../components/pages/HomePage/HomePage'))
 
 const routes: {
     [key: string] : string,
@@ -12,7 +14,7 @@ const routes: {
 const appRoutes: { path: string, element: ReactElement}[] = [
     {
         path: routes.HOME_PAGE,
-        element: <div></div>,
+        element: <Home />,
     },
     {
         path: routes.CATALOG_PAGE,

@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 
 import car1 from '../../../assets/images/car1.png';
 import car2 from '../../../assets/images/car2.png';
+import car3 from '../../../assets/images/car3.png';
 
 const HomePage = (): ReactElement => {
     return (
@@ -14,13 +15,13 @@ const HomePage = (): ReactElement => {
                     <div>
                         <ul>
                             <li>
-                                <img src={car1} alt="" />
+                                <img src={car1} alt={car1} />
                             </li>
                             <li>
-                                <img src="" alt="" />
+                                <img src={car2} alt={car2} />
                             </li>
                             <li>
-                                <img src="" alt="" />
+                                <img src={car3} alt={car3} />
                             </li>
                         </ul>
                     </div>
